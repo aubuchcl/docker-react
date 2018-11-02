@@ -1,3 +1,14 @@
+pull project from github
+
+run docker build -f Dockerfile.dev . (from root context)
+
+run docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <img id>
+
+
+visit localhost:3000
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
