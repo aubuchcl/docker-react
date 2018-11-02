@@ -1,8 +1,8 @@
 pull project from github
 
-run docker build -f Dockerfile.dev . (from root context)
+run docker-compose up
 
-run docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <img id>
+*volumes mounted 
 
 
 visit localhost:3000
