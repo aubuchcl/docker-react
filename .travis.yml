@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+
+before_install:
+  - docker build -t aubuchcl/docker-react -f Dockerfile.div .
+  
+script:
+  - docker run aubuchcl/docker-react npm run test -- --coverage
