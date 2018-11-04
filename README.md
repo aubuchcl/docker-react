@@ -1,4 +1,4 @@
-pull project from github
+  pull project from github
 
 run docker-compose up
 
