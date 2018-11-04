@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t aubuchcl/docker-react -f Dockerfile.div .
+  - docker build -t aubuchcl/docker-react -f Dockerfile.dev .
   
 script:
   - docker run aubuchcl/docker-react npm run test -- --coverage
