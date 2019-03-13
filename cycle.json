@@ -10,7 +10,7 @@
     "web": {
       "name": "web",
       "image": {
-        "name": "nodejs"
+        "name": "node:alpine"
       },
       "source": {
         "docker_file": {
