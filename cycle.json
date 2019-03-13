@@ -8,14 +8,14 @@
   },
   "containers": {
     "web": {
-      "name": "web",
+      "name": "node:alpine",
       "image": {
-        "name": "node:alpine"
-      },
-      "source": {
-        "docker_file": {
-          "dir": "/",
-          "build_file": "Dockerfile.dev"
+        "name": "node:alpine",
+        "source": {
+          "docker_file": {
+            "dir": "/",
+            "build_file": "Dockerfile.dev"
+          }
         }
       },
       "config": {
