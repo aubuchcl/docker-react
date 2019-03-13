@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "about": null,
+  "tests": [],
+  "services": {
+    "loadbalancer": null,
+    "vpn": null
+  },
+  "containers": {
+    "web": {
+      "name": "web",
+      "image": {
+        "name": "nodejs"
+      },
+      "source": {
+        "docker_file": {
+          "dir": "/",
+          "build_file": "Dockerfile.dev"
+        }
+      },
+      "config": {
+        "network": {
+          "public": "enabled",
+          "hostname": "web",
+          "ports": ["3000:3000"]
+        },
+        "deploy": {
+          "instances": 1,
+          "constraints": null,
+          "shutdown": null,
+          "restart": null,
+          "health_check": null
+        },
+        "scaling": null,
+        "runtime": null,
+        "resources": null,
+        "integrations": null
+      },
+      "volumes": [
+        {
+          "read_only": false,
+          "local": {
+            "max_size": "512M"
+          },
+          "destination": "/app",
+          "remote_access": {
+            "enable": false,
+            "ips": [],
+            "webhook": "",
+            "password": null
+          }
+        },
+        {
+          "read_only": false,
+          "local": {
+            "max_size": "10M"
+          },
+          "destination": "/app/node_modules",
+          "remote_access": {
+            "enable": false,
+            "ips": [],
+            "webhook": "",
+            "password": null
+          }
+        }
+      ]
+    }
+  }
+}
