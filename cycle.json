@@ -36,34 +36,7 @@
         "resources": null,
         "integrations": null
       },
-      "volumes": [
-        {
-          "read_only": false,
-          "local": {
-            "max_size": "512M"
-          },
-          "destination": "/app",
-          "remote_access": {
-            "enable": false,
-            "ips": [],
-            "webhook": "",
-            "password": null
-          }
-        },
-        {
-          "read_only": false,
-          "local": {
-            "max_size": "512M"
-          },
-          "destination": "/app/node_modules",
-          "remote_access": {
-            "enable": false,
-            "ips": [],
-            "webhook": "",
-            "password": null
-          }
-        }
-      ]
+      "volumes": []
     }
   }
 }
